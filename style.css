@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    flex-direction: column;
+
+    background-color: #1c2539;
+
+    height: 100vh;
+}
+
+.container {
+    background-color: #283c85;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    border: 2px solid #ededed55;
+}
+
+.tab {
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 1.2em;
+    margin: 0 1.2em;
+
+    transition: background 0.4s linear;
+}
+
+.tab i {
+    font-size: 2em;
+    color: #ABB9D3;
+    cursor: pointer;
+}
+
+.tab.active i {
+    font-size: 1.4em;
+    color: #283c85;
+}
+
+.tab p {
+    font-weight: bold;
+    overflow: hidden;
+    max-width: 0;
+}
+
+.active p {
+    margin-left: .8em;
+    max-width: 200px;
+    transition: max-width 0.8s linear;
+}
+
+.active {
+    background: #40E4FF;
+    color: #283c85;
+}
